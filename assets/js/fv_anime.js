@@ -31,19 +31,19 @@ function delay(ms) {
 // === hero animation (typewriter) ===
 function animateTypeWriter1() {
   return new Promise((resolve) => {
-    typing(".top-hero__title", "クリエイターの").then(resolve);
+    typing(".top-hero__title1", "クリエイターの").then(resolve);
   });
 }
 
 function animateTypeWriter2() {
   return new Promise((resolve) => {
-    typing(".top-hero__title", "ポートフォリオを").then(resolve);
+    typing(".top-hero__title2", "ポートフォリオを").then(resolve);
   });
 }
 
 function animateTypeWriter3() {
   return new Promise((resolve) => {
-    typing(".top-hero__title", "もっと身近に").then(resolve);
+    typing(".top-hero__title3", "もっと身近に").then(resolve);
   });
 }
 
@@ -63,7 +63,6 @@ const typing = (selector, text) => {
 // ==== hide top hero ===
 function hideTopHero() {
   return new Promise((resolve) => {
-    document.querySelectorAll("body, html").forEach((el) => el.classList.remove("no-scroll"));
     gsap.to(".top-hero__title", {
       opacity: 0,
       duration: 2,
@@ -76,6 +75,7 @@ function hideTopHero() {
 
 function hideTopHeroBgkground() {
   return new Promise((resolve) => {
+    document.querySelectorAll("body, html").forEach((el) => el.classList.remove("no-scroll"));
     gsap.to(".top-hero", {
       opacity: 0,
       duration: 2,
