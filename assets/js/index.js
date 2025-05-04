@@ -122,12 +122,12 @@ gsap.to(".top-news__list", {
 // main card animation
 // ============================
 document.addEventListener("DOMContentLoaded", () => {
-  // Intersection Observer for fade-in animation
   const cards = document.querySelectorAll(".gallery-card");
   const observer = new IntersectionObserver(
     (entries, obs) => {
-      entries.forEach((entry) => {
+      entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = `${index * 200}ms`; // 0.2秒ずつ遅らせる
           entry.target.classList.add("is-inview");
           obs.unobserve(entry.target);
         }
