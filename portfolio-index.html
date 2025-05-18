@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードの指定 UTF-8を指定します-->
+    <meta charset="UTF-8" />
+    <!-- スマホやタブレットでも綺麗に表示する「レスポンシブ表示」のための記述です -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定します -->
+    <!-- <link rel="shortcut icon" href="./xxxxxxxxxxx" type="image/X-icon.png" /> -->
+    <!-- ブラウザ検索から逃れます -->
+    <meta name="robots" content="noindex" />
+
+    <!-- サイトのタイトルを記述します -->
+    <title>サイトのタイトルを記入します。</title>
+    <!-- サイトの概要を記述します -->
+    <meta name="description" content="サイトの概要を記入します" />
+    <!-- OGP -->
+    <!-- <meta property="og:title" content="サイトのタイトルを記入します" />
+    <meta property="og:description" content="サイトの概要を記入します" />
+    <meta property="og:site_name" content="サイトの名前を記入します" />
+    <meta property="og:url" content="https://sample.com" />
+    <meta property="og:image" content="https://sample.com/img/OGP.jpg" /> -->
+    <!-- Twitter Cards -->
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@sample_account" />
+    <meta name="twitter:title" content="サイトのタイトルを記入します" />
+    <meta name="twitter:description" content="サイトの概要を記入します" />
+    <meta name="twitter:image" content="https://sample.com/img/OGP.jpg" /> -->
+    <!-- Google Fontsを読み込むための記述です -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+    <!-- スタイルシートの読み込みのための記述です -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="portfolio-index">
+    <div class="top-hero">
+      <div class="top-hero__container">
+        <div class="top-hero__title">
+          <span class="top-hero__title1"></span><br />
+          <span class="top-hero__title2"></span><br />
+          <span class="top-hero__title3"></span>
+        </div>
+      </div>
+    </div>
+
+    <!--    header   -->
+    <header class="header header--portfolio">
+      <h1 class="header__title">Portfolio</h1>
+    </header>
+    <!--    / header   -->
+
+    <!--   nav menu component   -->
+    <nav class="nav-menu-wrapper">
+      <div class="nav-menu__position">
+        <a class="nav-menu__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" id="js_nav-icon__logo">
+            <path
+              d="M3.45611 23.0957L0 31.5559C5.92863 29.9616 14.31 31.6569 19.9039 38C26.4878 31.5629 32.8317 30.4999 40 31.4909L36.4161 23.0957C28.9819 22.5172 23.0294 29.0899 20 35.9394C17.6723 29.2634 10.0621 22.0851 3.45611 23.0957Z"
+              fill="white"
+            />
+            <path d="M19.9998 2.00044C15.0291 2.00044 11 6.56288 11 12.1911C11 24.0062 19.4587 32 19.9998 32C20.5409 32 29 24.0062 29 12.1911C29 6.56245 24.9709 2 19.9998 2V2.00044Z" fill="white" />
+            <path d="M20 15C22.2091 15 24 13.2091 24 11C24 8.79086 22.2091 7 20 7C17.7909 7 16 8.79086 16 11C16 13.2091 17.7909 15 20 15Z" fill="#333333" />
+          </svg>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="js_nav-menu_inactive" id="js_nav-icon__cross">
+            <rect width="23.4733" height="1.20832" rx="0.604158" transform="matrix(0.702704 0.711483 -0.702704 0.711483 1.50488 0)" fill="white" />
+            <rect width="23.4733" height="1.20832" rx="0.604158" transform="matrix(0.702704 -0.711483 0.702704 0.711483 0 17.1403)" fill="white" />
+          </svg>
+          <p class="nav-menu__icon--title">Menu</p>
+        </a>
+
+        <ul class="nav-menu__list">
+          <li class="nav-menu__list--item nav-menu__list--about">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--portfolio">
+            <a href="/portfolio-index.html">Portfolio</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--search">
+            <a href="#">Search</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--contact">
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-menu__mask"></div>
+    <!--   / nav menu component   -->
+
+    <main>
+      <section class="palette-wrapper">
+        <nav class="breadcrumb"> <a href="/">Home</a> - <a href="/portfolio-index.html">Portfolio</a> </nav>
+        <div class="inner palette__inner">
+          <div class="palette__select-area">
+            <div class="palette__type">
+              <h2 class="palette__type--title">Type</h2>
+              <ul class="palette__type--lists">
+                <li><a class="palette__type--list palette-selected">Wordpress</a></li>
+                <li><a class="palette__type--list palette-selected">Studio</a></li>
+                <li><a class="palette__type--list">LP</a></li>
+                <li><a class="palette__type--list">Folio</a></li>
+                <li><a class="palette__type--list">Shopify</a></li>
+                <li><a class="palette__type--list">Others</a></li>
+              </ul>
+            </div>
+            <div class="palette__style">
+              <h2 class="palette__style--title">Style</h2>
+              <ul class="palette__style--lists">
+                <li><a class="palette__style--list palette-selected">Cool</a></li>
+                <li><a class="palette__style--list palette-selected">Cute</a></li>
+                <li><a class="palette__style--list palette-selected">Simple</a></li>
+                <li><a class="palette__style--list palette-selected">Natural</a></li>
+                <li><a class="palette__style--list">Casual</a></li>
+                <li><a class="palette__style--list">Pop</a></li>
+                <li><a class="palette__style--list">Luxury</a></li>
+              </ul>
+            </div>
+            <div class="palette__color">
+              <h2 class="palette__color--title">Color</h2>
+              <ul class="palette__color--lists">
+                <li><a class="palette__color--list palette-red"></a></li>
+                <li><a class="palette__color--list palette-orange"></a></li>
+                <li><a class="palette__color--list palette-yellow"></a></li>
+                <li><a class="palette__color--list palette-green"></a></li>
+                <li><a class="palette__color--list palette-blue"></a></li>
+                <li><a class="palette__color--list palette-purple"></a></li>
+                <li><a class="palette__color--list palette-pink"></a></li>
+                <li><a class="palette__color--list palette-brown"></a></li>
+                <li><a class="palette__color--list palette-black"></a></li>
+                <li><a class="palette__color--list palette-gray"></a></li>
+                <li><a class="palette__color--list palette-white"></a></li>
+                <li><a class="palette__color--list palette-other"></a></li>
+              </ul>
+            </div>
+            <div class="palette__search-btn">
+              <div class="search-button">
+                <button class="bgskew"><span>Search</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top-gallery">
+        <div class="top-gallery__grid">
+          <!-- 9つのカードを繰り返し -->
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/card-sample.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/card-sample.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/card-sample.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <!-- 他のカード -->
+        </div>
+        <ul class="pagination__index">
+          <li class="pagination__index--item"><a href="#">1</a></li>
+          <li class="pagination__index--item"><a href="#">2</a></li>
+          <li class="pagination__index--item is-active"><a href="#">3</a></li>
+          <li class="pagination__index--item"><a href="#">4</a></li>
+          <li class="pagination__index--item"><a href="#">5</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <h2 class="footer__title">
+          <img src="./assets/img/folio-icon_pc.png" width="50" height="50" alt="" />
+          Folio Spot
+        </h2>
+
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="/portfolio-index.html">Portfolio</a></li>
+            <li class="footer__nav-item"><a href="/about.html">About</a></li>
+            <li class="footer__nav-item"><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-line"></div>
+
+        <div class="footer__sns">
+          <ul class="footer__sns-list">
+            <li class="footer__sns-item">
+              <div class="footer__sns-item-wrap">
+                <a href="https://zawa-portfolio.studio.site/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/zawa-icon.png" alt="zawa" width="40" height="40" /></a>
+                <a href="https://x.com/zawa9150" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/X-icon.png" alt="X" width="40" height="40" />
+                </a>
+              </div>
+            </li>
+            <li class="footer__sns-item">
+              <div class="footer__sns-item-wrap">
+                <a href="https://mura-labs.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/mura-icon.png" alt="mura" width="40" height="40" /></a>
+                <a href="https://x.com/mura_khkh" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/X-icon.png" alt="X" width="40" height="40" />
+                </a>
+              </div>
+            </li>
+            <li class="footer__sns-item">
+              <div class="footer__sns-item-wrap">
+                <a href="https://kame82.github.io/LP_PF_elementary/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/tsukamo-icon.png" alt="tsukamo" width="40" height="40" /></a>
+                <a href="https://x.com/kamteyaso" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/X-icon.png" alt="X" width="40" height="40" />
+                </a>
+              </div>
+            </li>
+            <li class="footer__sns-item">
+              <div class="footer__sns-item-wrap">
+                <a href="https://codevoyage.ichigo20.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/chiusa-icon.png" alt="chiusa" width="40" height="40" /></a>
+                <a href="https://x.com/usa_konpeito21" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/X-icon.png" alt="X" width="40" height="40" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">@2025 Folio Spot</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
+</html>

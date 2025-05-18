@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードの指定 UTF-8を指定します-->
+    <meta charset="UTF-8" />
+    <!-- スマホやタブレットでも綺麗に表示する「レスポンシブ表示」のための記述です -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定します -->
+    <!-- <link rel="shortcut icon" href="./xxxxxxxxxxx" type="image/X-icon.png" /> -->
+    <!-- ブラウザ検索から逃れます -->
+    <meta name="robots" content="noindex" />
+
+    <!-- サイトのタイトルを記述します -->
+    <title>サイトのタイトルを記入します。</title>
+    <!-- サイトの概要を記述します -->
+    <meta name="description" content="サイトの概要を記入します" />
+    <!-- OGP -->
+    <!-- <meta property="og:title" content="サイトのタイトルを記入します" />
+    <meta property="og:description" content="サイトの概要を記入します" />
+    <meta property="og:site_name" content="サイトの名前を記入します" />
+    <meta property="og:url" content="https://sample.com" />
+    <meta property="og:image" content="https://sample.com/img/OGP.jpg" /> -->
+    <!-- Twitter Cards -->
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@sample_account" />
+    <meta name="twitter:title" content="サイトのタイトルを記入します" />
+    <meta name="twitter:description" content="サイトの概要を記入します" />
+    <meta name="twitter:image" content="https://sample.com/img/OGP.jpg" /> -->
+    <!-- Google Fontsを読み込むための記述です -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+    <!-- スタイルシートの読み込みのための記述です -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!--    header   -->
+    <header class="header header--contact">
+      <h1 class="header__title">Contact</h1>
+    </header>
+    <!--    / header   -->
+
+    <!--   nav menu component   -->
+    <nav class="nav-menu-wrapper">
+      <div class="nav-menu__position nav--position">
+        <a class="nav-menu__icon nav--icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" id="js_nav-icon__logo">
+            <path
+              d="M3.45611 23.0957L0 31.5559C5.92863 29.9616 14.31 31.6569 19.9039 38C26.4878 31.5629 32.8317 30.4999 40 31.4909L36.4161 23.0957C28.9819 22.5172 23.0294 29.0899 20 35.9394C17.6723 29.2634 10.0621 22.0851 3.45611 23.0957Z"
+              fill="white"
+            />
+            <path d="M19.9998 2.00044C15.0291 2.00044 11 6.56288 11 12.1911C11 24.0062 19.4587 32 19.9998 32C20.5409 32 29 24.0062 29 12.1911C29 6.56245 24.9709 2 19.9998 2V2.00044Z" fill="white" />
+            <path d="M20 15C22.2091 15 24 13.2091 24 11C24 8.79086 22.2091 7 20 7C17.7909 7 16 8.79086 16 11C16 13.2091 17.7909 15 20 15Z" fill="#333333" />
+          </svg>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="js_nav-menu_inactive" id="js_nav-icon__cross">
+            <rect width="23.4733" height="1.20832" rx="0.604158" transform="matrix(0.702704 0.711483 -0.702704 0.711483 1.50488 0)" fill="white" />
+            <rect width="23.4733" height="1.20832" rx="0.604158" transform="matrix(0.702704 -0.711483 0.702704 0.711483 0 17.1403)" fill="white" />
+          </svg>
+          <p class="nav-menu__icon--title">Menu</p>
+        </a>
+
+        <ul class="nav-menu__list nav--list">
+          <li class="nav-menu__list--item nav-menu__list--about">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--portfolio">
+            <a href="/portfolio-index.html">Portfolio</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--search">
+            <a href="#">Search</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--contact">
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-menu__mask"></div>
+    <!--   / nav menu component   -->
+
+    <main class="main">
+      <nav class="breadcrumb"> <a href="/">Home</a> - <a href="/contact.html">Contact</a> </nav>
+      <div class="inner">
+        <div class="thx__contents">
+          <h2 class="thx__title">Thank you</h2>
+          <img src="./assets/img/thx_person.webp" alt="thx_person" width="300" height="300" />
+        </div>
+      </div>
+    </main>
+
+    <!--   footer component   -->
+    <footer class="footer">
+      <div class="footer__inner"> </div>
+    </footer>
+    <!--   / footer component   -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードの指定 UTF-8を指定します-->
+    <meta charset="UTF-8" />
+    <!-- スマホやタブレットでも綺麗に表示する「レスポンシブ表示」のための記述です -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定します -->
+    <!-- <link rel="shortcut icon" href="./xxxxxxxxxxx" type="image/X-icon.png" /> -->
+    <!-- ブラウザ検索から逃れます -->
+    <meta name="robots" content="noindex" />
+
+    <!-- サイトのタイトルを記述します -->
+    <title>サイトのタイトルを記入します。</title>
+    <!-- サイトの概要を記述します -->
+    <meta name="description" content="サイトの概要を記入します" />
+    <!-- OGP -->
+    <!-- <meta property="og:title" content="サイトのタイトルを記入します" />
+    <meta property="og:description" content="サイトの概要を記入します" />
+    <meta property="og:site_name" content="サイトの名前を記入します" />
+    <meta property="og:url" content="https://sample.com" />
+    <meta property="og:image" content="https://sample.com/img/OGP.jpg" /> -->
+    <!-- Twitter Cards -->
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@sample_account" />
+    <meta name="twitter:title" content="サイトのタイトルを記入します" />
+    <meta name="twitter:description" content="サイトの概要を記入します" />
+    <meta name="twitter:image" content="https://sample.com/img/OGP.jpg" /> -->
+    <!-- Google Fontsを読み込むための記述です -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+    <!-- スタイルシートの読み込みのための記述です -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="top-hero">
+      <div class="top-hero__container">
+        <div class="top-hero__title">
+          <span class="top-hero__title1"></span><br />
+          <span class="top-hero__title2"></span><br />
+          <span class="top-hero__title3"></span>
+        </div>
+      </div>
+    </div>
+    <div class="top-fv">
+      <div class="top-fv--container">
+        <h1 class="top-fv__title">Folio Spot</h1>
+        <div class="top-fv__people">
+          <img src="./assets/img/person_1.webp" alt="person_1" class="top-fv__container-people--1" height="315" />
+          <img src="./assets/img/person_2.webp" alt="person_2" class="top-fv__container-people--2" height="315" />
+          <img src="./assets/img/person_3.webp" alt="person_3" class="top-fv__container-people--3" height="315" />
+          <img src="./assets/img/person_4.webp" alt="person_4" class="top-fv__container-people--4" height="315" />
+          <img src="./assets/img/person_5.webp" alt="person_5" class="top-fv__container-people--5" height="315" />
+          <img src="./assets/img/person_6.webp" alt="person_6" class="top-fv__container-people--6" height="315" />
+          <img src="./assets/img/person_7.webp" alt="person_7" class="top-fv__container-people--7" height="315" />
+          <img src="./assets/img/person_8.webp" alt="person_8" class="top-fv__container-people--8" height="315" />
+          <img src="./assets/img/person_9.webp" alt="person_9" class="top-fv__container-people--9" height="315" />
+        </div>
+      </div>
+      <div class="top-news">
+        <div class="top-news__container">
+          <div class="loop-area">
+            <!-- 無限スクロールのため、ul内の要素は同じ要素を扱う事。要素＊4で実装。 -->
+            <ul class="top-news__list">
+              <li><h2 class="top-news__title">News:</h2></li>
+              <li class="top-news__list-item"> 2023.10.01 サイトを公開しました。 </li>
+              <li class="top-news__list-item"> 2023.10.01 サイトを公開しました。 </li>
+            </ul>
+            <ul class="top-news__list">
+              <li><h2 class="top-news__title">News:</h2></li>
+              <li class="top-news__list-item"> 2023.10.01 サイトを公開しました。 </li>
+              <li class="top-news__list-item"> 2023.10.01 サイトを公開しました。 </li>
+            </ul>
+            <ul class="top-news__list">
+              <li><h2 class="top-news__title">News:</h2></li>
+              <li class="top-news__list-item"> 2023.10.01 サイトを公開しました。 </li>
+              <li class="top-news__list-item"> 2023.10.01 サイトを公開しました。 </li>
+            </ul>
+            <ul class="top-news__list">
+              <li><h2 class="top-news__title">News:</h2></li>
+              <li class="top-news__list-item"> 2023.10.01 サイトを公開しました。 </li>
+              <li class="top-news__list-item"> 2023.10.01 サイトを公開しました。 </li>
+            </ul>
+            <!-- /繰り返しここまで -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   nav menu component   -->
+    <nav class="nav-menu-wrapper top-fv__nav">
+      <div class="nav-menu__position top-fv__nav--position">
+        <a class="nav-menu__icon top-fv__nav--icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" id="js_nav-icon__logo">
+            <path
+              d="M3.45611 23.0957L0 31.5559C5.92863 29.9616 14.31 31.6569 19.9039 38C26.4878 31.5629 32.8317 30.4999 40 31.4909L36.4161 23.0957C28.9819 22.5172 23.0294 29.0899 20 35.9394C17.6723 29.2634 10.0621 22.0851 3.45611 23.0957Z"
+              fill="white"
+            />
+            <path d="M19.9998 2.00044C15.0291 2.00044 11 6.56288 11 12.1911C11 24.0062 19.4587 32 19.9998 32C20.5409 32 29 24.0062 29 12.1911C29 6.56245 24.9709 2 19.9998 2V2.00044Z" fill="white" />
+            <path d="M20 15C22.2091 15 24 13.2091 24 11C24 8.79086 22.2091 7 20 7C17.7909 7 16 8.79086 16 11C16 13.2091 17.7909 15 20 15Z" fill="#333333" />
+          </svg>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="js_nav-menu_inactive" id="js_nav-icon__cross">
+            <rect width="23.4733" height="1.20832" rx="0.604158" transform="matrix(0.702704 0.711483 -0.702704 0.711483 1.50488 0)" fill="white" />
+            <rect width="23.4733" height="1.20832" rx="0.604158" transform="matrix(0.702704 -0.711483 0.702704 0.711483 0 17.1403)" fill="white" />
+          </svg>
+          <p class="nav-menu__icon--title">Menu</p>
+        </a>
+
+        <ul class="nav-menu__list top-fv__nav--list">
+          <li class="nav-menu__list--item nav-menu__list--about">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--portfolio">
+            <a href="/portfolio-index.html">Portfolio</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--search">
+            <a href="#">Search</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--contact">
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-menu__mask"></div>
+    <!--   / nav menu component   -->
+
+    <main>
+      <section class="top-gallery">
+        <div class="top-gallery__grid">
+          <!-- 9つのカードを繰り返し -->
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/card-sample.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/card-sample.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/card-sample.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <a class="gallery-card" href="/portfolio-detail.html">
+            <div class="gallery-card__image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="gallery-card__title">サイト名○○○○○○</div>
+          </a>
+          <!-- 他のカード -->
+        </div>
+        <div class="more-button">
+          <a href="#" class="bgskew"><span>View More</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <h2 class="footer__title">
+          <img src="./assets/img/folio-icon_pc.png" width="50" height="50" alt="" />
+          Folio Spot
+        </h2>
+
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="/portfolio-index.html">Portfolio</a></li>
+            <li class="footer__nav-item"><a href="/about.html">About</a></li>
+            <li class="footer__nav-item"><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-line"></div>
+
+        <div class="footer__sns">
+          <ul class="footer__sns-list">
+            <li class="footer__sns-item">
+              <div class="footer__sns-item-wrap">
+                <a href="https://zawa-portfolio.studio.site/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/zawa-icon.png" alt="zawa" width="40" height="40" /></a>
+                <a href="https://x.com/zawa9150" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/X-icon.png" alt="X" width="40" height="40" />
+                </a>
+              </div>
+            </li>
+            <li class="footer__sns-item">
+              <div class="footer__sns-item-wrap">
+                <a href="https://mura-labs.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/mura-icon.png" alt="mura" width="40" height="40" /></a>
+                <a href="https://x.com/mura_khkh" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/X-icon.png" alt="X" width="40" height="40" />
+                </a>
+              </div>
+            </li>
+            <li class="footer__sns-item">
+              <div class="footer__sns-item-wrap">
+                <a href="https://kame82.github.io/LP_PF_elementary/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/tsukamo-icon.png" alt="tsukamo" width="40" height="40" /></a>
+                <a href="https://x.com/kamteyaso" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/X-icon.png" alt="X" width="40" height="40" />
+                </a>
+              </div>
+            </li>
+            <li class="footer__sns-item">
+              <div class="footer__sns-item-wrap">
+                <a href="https://codevoyage.ichigo20.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/chiusa-icon.png" alt="chiusa" width="40" height="40" /></a>
+                <a href="https://x.com/usa_konpeito21" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/X-icon.png" alt="X" width="40" height="40" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">@2025 Folio Spot</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script type="module" src="./assets/js/fv_anime.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
+    <noscript>
+      <style>
+        .top-hero {
+          display: none;
+        }
+      </style>
+    </noscript>
+  </body>
+</html>
