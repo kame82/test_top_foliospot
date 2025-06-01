@@ -73,7 +73,7 @@ function openMenu() {
 
 function closeMenu() {
   gsap.killTweensOf(".nav-menu__list li"); //アニメーションの停止初期化
-  document.querySelectorAll("body, html").forEach((el) => el.classList.remove("no-scroll"));
+  document.querySelectorAll("body").forEach((el) => el.classList.remove("no-scroll"));
   //ロゴ切り替え
   document.querySelector("#js_nav-icon__logo").classList.remove("js_nav-menu_inactive");
   document.querySelector("#js_nav-icon__cross").classList.remove("js_nav-menu_active");
@@ -98,6 +98,56 @@ function closeMenu() {
     ease: "power2.inOut",
     onComplete: function () {
       document.querySelector(".nav-menu__mask").style.display = "none";
+    },
+  });
+}
+
+// ============================
+// search palette of navigation
+// ============================
+
+const navSearch = document.querySelector(".nav-menu__list--search");
+if (navSearch !== null) {
+  navSearch.addEventListener("click", function (e) {
+    e.preventDefault();
+    paletteOpen();
+  });
+
+  document.querySelector(".nav-palette__mask").addEventListener("click", function () {
+    paletteClose();
+  });
+
+  document.querySelector(".nav-palette__close-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    paletteClose();
+  });
+}
+
+function paletteOpen() {
+  const searchPalette = document.querySelector(".nav-palette");
+  searchPalette.classList.add("is-active");
+  closeMenu();
+  document.querySelectorAll("body").forEach((el) => el.classList.add("no-scroll"));
+  gsap.to(".nav-palette__mask", {
+    opacity: 0.8,
+    display: "block",
+    duration: 0.6,
+    ease: "power2.inOut",
+  });
+}
+
+function paletteClose() {
+  const searchPalette = document.querySelector(".nav-palette");
+
+  document.querySelectorAll("body").forEach((el) => el.classList.remove("no-scroll"));
+  searchPalette.classList.remove("is-active");
+
+  gsap.to(".nav-palette__mask", {
+    opacity: 0,
+    duration: 0.6,
+    ease: "power2.inOut",
+    onComplete: function () {
+      document.querySelector(".nav-palette__mask").style.display = "none";
     },
   });
 }
@@ -157,3 +207,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// ============================
+// get color palette URL parameter
+// ============================
+
+const urlParams = new URLSearchParams(window.location.search);
+const selectedTypes = urlParams.getAll("type[]") || [];
+const selectedStyles = urlParams.getAll("style[]") || [];
+const selectedColors = urlParams.getAll("color[]") || [];
+
+if (selectedTypes.length > 0) {
+  try {
+    selectedTypes.forEach((type) => {
+      const typeElements = document.querySelectorAll(`.palette__type--list-${type}`);
+      typeElements.forEach((el) => {
+        el.checked = true;
+      });
+    });
+  } catch (error) {
+    console.error("Typeのチェックボックスの初期化中にエラーが発生しました:", error);
+  }
+}
+
+if (selectedStyles.length > 0) {
+  try {
+    selectedStyles.forEach((style) => {
+      const styleElements = document.querySelectorAll(`.palette__style--list-${style}`);
+      styleElements.forEach((el) => {
+        el.checked = true;
+      });
+    });
+  } catch (error) {
+    console.error("Styleのチェックボックスの初期化中にエラーが発生しました:", error);
+  }
+}
+
+if (selectedColors.length > 0) {
+  try {
+    selectedColors.forEach((color) => {
+      const colorElements = document.querySelectorAll(`.palette-${color}`);
+      colorElements.forEach((el) => {
+        el.checked = true;
+      });
+    });
+  } catch (error) {
+    console.error("Colorのチェックボックスの初期化中にエラーが発生しました:", error);
+  }
+}

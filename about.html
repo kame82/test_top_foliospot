@@ -71,33 +71,267 @@
 
         <ul class="nav-menu__list">
           <li class="nav-menu__list--item nav-menu__list--about">
-            <a href="/about.html">About</a>
+            <a href="./about.html">About</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--portfolio">
-            <a href="/portfolio-index.html">Portfolio</a>
+            <a href="./portfolio-index.html">Portfolio</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--search">
             <a href="#">Search</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--contact">
-            <a href="/contact.html">Contact</a>
+            <a href="./contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
     <div class="nav-menu__mask"></div>
+
+    <div class="palette-wrapper nav-palette">
+      <div class="inner palette__inner">
+        <div class="nav-palette__close">
+          <a class="nav-palette__close-btn">
+            <span class="nav-palette__close-line1 nav-close-line"></span>
+            <span class="nav-palette__close-line2 nav-close-line"></span>
+          </a>
+        </div>
+        <div class="palette__select-area">
+          <form method="get" action="">
+            <div class="palette__type">
+              <h2 class="palette__type--title">Type</h2>
+              <ul class="palette__type--lists">
+                <li>
+                  <label><input class="palette__type--list palette__type--list-wordpress" type="checkbox" name="type[]" value="wordpress" /><span>Wordpress</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__type--list palette__type--list-studio" type="checkbox" name="type[]" value="studio" /><span>Studio</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__type--list palette__type--list-lp" type="checkbox" name="type[]" value="lp" /><span>LP</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__type--list palette__type--list-folio" type="checkbox" name="type[]" value="folio" /><span>Folio</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__type--list palette__type--list-shopify" type="checkbox" name="type[]" value="shopify" /><span>Shopify</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__type--list palette__type--list-others" type="checkbox" name="type[]" value="others" /><span>Others</span></label>
+                </li>
+              </ul>
+            </div>
+            <div class="palette__style">
+              <h2 class="palette__style--title">Style</h2>
+              <ul class="palette__style--lists">
+                <li>
+                  <label><input class="palette__style--list palette__style--list-cool" type="checkbox" name="style[]" value="cool" /><span>Cool</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-cute" type="checkbox" name="style[]" value="cute" /><span>Cute</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-simple" type="checkbox" name="style[]" value="simple" /><span>Simple</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-natural" type="checkbox" name="style[]" value="natural" /><span>Natural</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-casual" type="checkbox" name="style[]" value="casual" /><span>Casual</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-pop" type="checkbox" name="style[]" value="pop" /><span>Pop</span></label>
+                  </li>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-luxury" type="checkbox" name="style[]" value="luxury" /><span>Luxury</span></label>                  </li>
+                </li>
+              </ul>
+            </div>
+            <div class="palette__color">
+              <h2 class="palette__color--title">Color</h2>
+              <ul class="palette__color--lists">
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-red" type="checkbox" name="color[]" value="red" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-orange" type="checkbox" name="color[]" value="orange" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-yellow" type="checkbox" name="color[]" value="yellow" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-green" type="checkbox" name="color[]" value="green" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-blue" type="checkbox" name="color[]" value="blue" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-purple" type="checkbox" name="color[]" value="purple" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-pink" type="checkbox" name="color[]" value="pink" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-brown" type="checkbox" name="color[]" value="brown" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-black" type="checkbox" name="color[]" value="black" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-gray" type="checkbox" name="color[]" value="gray" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#ffffff"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-white" type="checkbox" name="color[]" value="white" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-other" type="checkbox" name="color[]" value="other" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="palette__search-btn">
+              <div class="search-button">
+                <button><span>Search</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="nav-palette__mask"></div>
     <!--   / nav menu component   -->
 
     <main>
       <section class="concept-wrapper">
-        <nav class="breadcrumb"> <a href="/">Home</a> - <a href="/about.html">About</a> </nav>
+        <nav class="breadcrumb"> <a href="/">Home</a> - <a href="./about.html">About</a> </nav>
         <div class="inner">
           <div class="section__title">
             <h2 class="section__title--main">Concept</h2>
             <p class="section__title--sub">コンセプト</p>
           </div>
           <div class="concept__contents">
-            <div class="concept__img"></div>
+            <div class="concept__img--inner">
+              <div class="concept__img"> </div>
+            </div>
             <div class="concept__main">
               <p class="concept__main--title"></p>
               <div class="concept__main--subs">
@@ -230,9 +464,9 @@
 
         <nav class="footer__nav">
           <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="/portfolio-index.html">Portfolio</a></li>
-            <li class="footer__nav-item"><a href="/about.html">About</a></li>
-            <li class="footer__nav-item"><a href="/contact.html">Contact</a></li>
+            <li class="footer__nav-item"><a href="./portfolio-index.html">Portfolio</a></li>
+            <li class="footer__nav-item"><a href="./about.html">About</a></li>
+            <li class="footer__nav-item"><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
 
@@ -274,7 +508,9 @@
             </li>
           </ul>
         </div>
-        <p class="footer__copyright">@2025 Folio Spot</p>
+        <div class="footer__copyright-wrap">
+          <small class="footer__copyright">© 2025 Folio Spot</small>
+        </div>
       </div>
     </footer>
 

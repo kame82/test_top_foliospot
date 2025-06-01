@@ -33,17 +33,27 @@
     <!-- スタイルシートの読み込みのための記述です -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body class="portfolio-index">
+    <div class="top-hero">
+      <div class="top-hero__container">
+        <div class="top-hero__title">
+          <span class="top-hero__title1"></span><br />
+          <span class="top-hero__title2"></span><br />
+          <span class="top-hero__title3"></span>
+        </div>
+      </div>
+    </div>
+
     <!--    header   -->
-    <header class="header header--portfolio">
-      <h1 class="header__title">Portfolio</h1>
+    <header class="header header--search">
+      <h1 class="header__title">Search results</h1>
     </header>
     <!--    / header   -->
 
     <!--   nav menu component   -->
     <nav class="nav-menu-wrapper">
-      <div class="nav-menu__position nav--position">
-        <a class="nav-menu__icon nav--icon">
+      <div class="nav-menu__position">
+        <a class="nav-menu__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" id="js_nav-icon__logo">
             <path
               d="M3.45611 23.0957L0 31.5559C5.92863 29.9616 14.31 31.6569 19.9039 38C26.4878 31.5629 32.8317 30.4999 40 31.4909L36.4161 23.0957C28.9819 22.5172 23.0294 29.0899 20 35.9394C17.6723 29.2634 10.0621 22.0851 3.45611 23.0957Z"
@@ -59,7 +69,7 @@
           <p class="nav-menu__icon--title">Menu</p>
         </a>
 
-        <ul class="nav-menu__list nav--list">
+        <ul class="nav-menu__list">
           <li class="nav-menu__list--item nav-menu__list--about">
             <a href="./about.html">About</a>
           </li>
@@ -309,123 +319,98 @@
     <!--   / nav menu component   -->
 
     <main class="main">
-      <nav class="breadcrumb"> <a href="/">Home</a> - <a href="./portfolio-index.html">Portfolio</a> </nav>
-      <div class="inner detail-inner">
-        <div class="portfolio-detail">
-          <div class="pf-main-content">
-            <span class="pf-date">2023.06.01</span>
-            <div class="pf-meta">
-              <div class="label-group">
-                <span class="label new">New</span>
-                <span class="label wp">Wordpress</span>
-                <span class="label blue">Blue</span>
-                <span class="label luxury">Luxury</span>
-              </div>
-              <span class="favorite">
-                <input type="checkbox" id="like" />
-                <label for="like">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                    <path
-                      d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                    />
-                  </svg>
-                </label>
-              </span>
+      <nav class="breadcrumb"> <a href="/">Home</a> - <a href="./search.html">Search</a> </nav>
+      <section class="category-gallery">
+        <div class="category-gallery__grid">
+          <!-- 9つのカードを繰り返し -->
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/card-sample.png" alt="" />
             </div>
-            <div class="thumbnail">
-              <span>Topページのサムネイル画像が入ります</span>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/card-sample.png" alt="" />
             </div>
-            <a href="#" class="site-url"><p>〇〇〇〇〇〇〇〇〇〇.jp</p></a>
-            <div class="user-row">
-              <img src="./assets/img/pf-icon.png" alt="icon" class="pf-icon" width="80" height="80" />
-              <div class="user-info">
-                <span class="user-name">〇〇〇〇〇〇〇様</span>
-                <span class="user-role">デザイナー</span>
-              </div>
-              <a href="#" class="pf-xicon" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/img/X-icon.png" alt="X" width="40" height="40" />
-              </a>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/card-sample.png" alt="" />
             </div>
-            <div class="point-box">
-              <span class="point-title">こだわりポイント</span>
-              <div class="point-text">
-                300文字の。。。。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-              </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/noimage.png" alt="" />
             </div>
-            <div class="comment-box">
-              <div class="comment-title">運営からのコメント</div>
-              <div class="comment-text">
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-              </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/noimage.png" alt="" />
             </div>
-          </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <a class="category-gallery__card" href="./portfolio-detail.html">
+            <div class="category-gallery__card-image">
+              <img src="./assets/img/noimage.png" alt="" />
+            </div>
+            <div class="category-gallery__card-title">サイト名○○○○○○</div>
+          </a>
+          <!-- 他のカード -->
         </div>
-        <div class="pagination">
-          <button class="prev">
-            <span class="prev-border"></span>
-            <span class="prev-text">Previous</span>
-          </button>
-          <div class="alllist-button type-2">
-            <button class="bgskew"><span>All List</span></button>
-          </div>
-          <button class="next">
-            <span class="next-text">Next</span>
-            <span class="next-border"></span>
-          </button>
-        </div>
+        <ul class="pagination__index">
+          <li class="pagination__index--item"><a href="#">1</a></li>
+          <li class="pagination__index--item"><a href="#">2</a></li>
+          <li class="pagination__index--item is-active"><a href="#">3</a></li>
+          <li class="pagination__index--item"><a href="#">4</a></li>
+          <li class="pagination__index--item"><a href="#">5</a></li>
+        </ul>
 
-        <div class="pfsection-line"></div>
-
-        <div class="pf-gallery">
-          <!-- New Article -->
-          <h2 class="pf-card-section-title">New Article</h2>
-          <div class="pf-card-grid">
-            <div class="pf-card">
-              <div class="pf-card__image">
-                <img src="./assets/img/card-sample.png" alt="" />
-              </div>
-              <div class="pf-card__title">サイト名○○○○○○</div>
-            </div>
-            <div class="pf-card">
-              <div class="pf-card__image">
-                <img src="./assets/img/card-sample.png" alt="" />
-              </div>
-              <div class="pf-card__title">サイト名○○○○○○</div>
-            </div>
-            <div class="pf-card">
-              <div class="pf-card__image">
-                <img src="./assets/img/card-sample.png" alt="" />
-              </div>
-              <div class="pf-card__title">サイト名○○○○○○</div>
-            </div>
-          </div>
-          <!-- View Ranking -->
-          <h2 class="pf-card-section-title">View Ranking</h2>
-          <div class="pf-card-grid">
-            <div class="pf-card">
-              <div class="pf-card__image">
-                <img src="./assets/img/card-sample.png" alt="" />
-              </div>
-              <div class="pf-card__title">サイト名○○○○○○</div>
-            </div>
-            <div class="pf-card">
-              <div class="pf-card__image">
-                <img src="./assets/img/card-sample.png" alt="" />
-              </div>
-              <div class="pf-card__title">サイト名○○○○○○</div>
-            </div>
-            <div class="pf-card">
-              <div class="pf-card__image">
-                <img src="./assets/img/card-sample.png" alt="" />
-              </div>
-              <div class="pf-card__title">サイト名○○○○○○</div>
-            </div>
-          </div>
+        <div class="alllist-button type-2 alllist-button--category">
+          <button class="bgskew"><span>All List</span></button>
         </div>
-      </div>
+      </section>
     </main>
 
-    <!--   footer component   -->
     <footer class="footer">
       <div class="footer__inner">
         <h2 class="footer__title">
@@ -484,12 +469,11 @@
         </div>
       </div>
     </footer>
-    <!--   / footer component   -->
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script type="module" src="./assets/js/index.js"></script>
-    <script type="module" src="./assets/js/pf-detail.js"></script>
+    <script type="module" src="./assets/js/category.js"></script>
   </body>
 </html>

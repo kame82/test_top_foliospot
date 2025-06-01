@@ -61,25 +61,255 @@
 
         <ul class="nav-menu__list nav--list">
           <li class="nav-menu__list--item nav-menu__list--about">
-            <a href="/about.html">About</a>
+            <a href="./about.html">About</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--portfolio">
-            <a href="/portfolio-index.html">Portfolio</a>
+            <a href="./portfolio-index.html">Portfolio</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--search">
             <a href="#">Search</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--contact">
-            <a href="/contact.html">Contact</a>
+            <a href="./contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
     <div class="nav-menu__mask"></div>
+
+    <div class="palette-wrapper nav-palette">
+      <div class="inner palette__inner">
+        <div class="nav-palette__close">
+          <a class="nav-palette__close-btn">
+            <span class="nav-palette__close-line1 nav-close-line"></span>
+            <span class="nav-palette__close-line2 nav-close-line"></span>
+          </a>
+        </div>
+        <div class="palette__select-area">
+          <form method="get" action="">
+            <div class="palette__type">
+              <h2 class="palette__type--title">Type</h2>
+              <ul class="palette__type--lists">
+                <li>
+                  <label><input class="palette__type--list palette__type--list-wordpress" type="checkbox" name="type[]" value="wordpress" /><span>Wordpress</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__type--list palette__type--list-studio" type="checkbox" name="type[]" value="studio" /><span>Studio</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__type--list palette__type--list-lp" type="checkbox" name="type[]" value="lp" /><span>LP</span></label>
+                </li>
+                <label><input class="palette__type--list palette__type--list-folio" type="checkbox" name="type[]" value="folio" /><span>Folio</span></label>
+                <li>
+                  <label><input class="palette__type--list palette__type--list-shopify" type="checkbox" name="type[]" value="shopify" /><span>Shopify</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__type--list palette__type--list-others" type="checkbox" name="type[]" value="others" /><span>Others</span></label>
+                </li>
+              </ul>
+            </div>
+            <div class="palette__style">
+              <h2 class="palette__style--title">Style</h2>
+              <ul class="palette__style--lists">
+                <li>
+                  <label><input class="palette__style--list palette__style--list-cool" type="checkbox" name="style[]" value="cool" /><span>Cool</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-cute" type="checkbox" name="style[]" value="cute" /><span>Cute</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-simple" type="checkbox" name="style[]" value="simple" /><span>Simple</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-natural" type="checkbox" name="style[]" value="natural" /><span>Natural</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-casual" type="checkbox" name="style[]" value="casual" /><span>Casual</span></label>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-pop" type="checkbox" name="style[]" value="pop" /><span>Pop</span></label>
+                  </li>
+                </li>
+                <li>
+                  <label><input class="palette__style--list palette__style--list-luxury" type="checkbox" name="style[]" value="luxury" /><span>Luxury</span></label>                  </li>
+                </li>
+              </ul>
+            </div>
+            <div class="palette__color">
+              <h2 class="palette__color--title">Color</h2>
+              <ul class="palette__color--lists">
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-red" type="checkbox" name="color[]" value="red" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-orange" type="checkbox" name="color[]" value="orange" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-yellow" type="checkbox" name="color[]" value="yellow" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-green" type="checkbox" name="color[]" value="green" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-blue" type="checkbox" name="color[]" value="blue" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-purple" type="checkbox" name="color[]" value="purple" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-pink" type="checkbox" name="color[]" value="pink" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-brown" type="checkbox" name="color[]" value="brown" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-black" type="checkbox" name="color[]" value="black" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-gray" type="checkbox" name="color[]" value="gray" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#ffffff"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-white" type="checkbox" name="color[]" value="white" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    ><input class="palette__color--list palette-other" type="checkbox" name="color[]" value="other" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
+                          fill="#888888"
+                        />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="palette__search-btn">
+              <div class="search-button">
+                <button><span>Search</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="nav-palette__mask"></div>
     <!--   / nav menu component   -->
 
     <main class="main">
-      <nav class="breadcrumb"> <a href="/">Home</a> - <a href="/contact.html">Contact</a> </nav>
+      <nav class="breadcrumb"> <a href="/">Home</a> - <a href="./contact.html">Contact</a> </nav>
 
       <div class="side-logo"></div>
 
@@ -112,10 +342,10 @@
               </label>
               <label class="contact-form__textarea">
                 Message
-                <textarea name="message" required></textarea>
+                <textarea name="message" maxlength="2000" required></textarea>
               </label>
               <div class="send-button type-2">
-                <button type="submit" class="bgskew"><span>Send</span></button>
+                <button type="submit"><span>Send</span></button>
               </div>
             </form>
           </div>
@@ -124,98 +354,84 @@
         <section class="faq-section">
           <h2 class="faq-section__title">FAQ</h2>
           <p class="faq-section__subtitle">よくある質問</p>
-          <ul class="faq-list">
-            <li class="faq-item">
-              <details class="details">
-                <summary class="details__summary">
-                  <span class="faq-q">Q</span>
-                  <span class="faq-question">このサイトには<br class="is-sp" />誰のポートフォリオが<br class="is-sp" />掲載されていますか？</span>
-                </summary>
-                <div class="details__content">
-                  <span class="faq-a">A</span>
-                  <span>デイトラコミュニティに参加している<br class="is-sp" />メンバー限定で掲載しています。</span>
-                </div>
-              </details>
-            </li>
-            <li class="faq-item">
-              <details class="details">
-                <summary class="details__summary">
-                  <span class="faq-q">Q</span>
-                  <span class="faq-question">掲載されている<br class="is-sp" />ポートフォリオを見た後、<br class="is-sp" />直接連絡してもいいですか？</span>
-                </summary>
-                <div class="details__content">
-                  <span class="faq-a">A</span>
-                  <span
-                    >各ポートフォリオ内に記載されている<br class="is-sp" />連絡方法をご確認ください。<br />
-                    連絡可否もそちらに準じます。</span
-                  >
-                </div>
-              </details>
-            </li>
-            <li class="faq-item">
-              <details class="details">
-                <summary class="details__summary">
-                  <span class="faq-q">Q</span>
-                  <span class="faq-question">ポートフォリオの内容について<br class="is-sp" />質問したいときは<br class="is-sp" />どうすればいいですか？</span>
-                </summary>
-                <div class="details__content">
-                  <span class="faq-a">A</span>
-                  <span>直接制作者にご連絡いただくか、<br class="is-sp" />コミュニティ運営まで<br class="is-sp" />お問い合わせください。</span>
-                </div>
-              </details>
-            </li>
-            <li class="faq-item">
-              <details class="details">
-                <summary class="details__summary">
-                  <span class="faq-q">Q</span>
-                  <span class="faq-question">掲載メンバーは<br class="is-sp" />随時追加されますか？</span>
-                </summary>
-                <div class="details__content">
-                  <span class="faq-a">A</span>
-                  <span>はい、随時追加を行ってます。<br class="is-sp" />掲載募集フォームへのご入力を<br class="is-sp" />お待ちしております。</span>
-                </div>
-              </details>
-            </li>
-            <li class="faq-item">
-              <details class="details">
-                <summary class="details__summary">
-                  <span class="faq-q">Q</span>
-                  <span class="faq-question">ポートフォリオの内容に<br class="is-sp" />誤りを見つけた場合、<br class="is-sp" />どこに連絡すればよいですか？</span>
-                </summary>
-                <div class="details__content">
-                  <span class="faq-a">A</span>
-                  <span><a href="#contact-form" class="faq-link">運営にお問い合わせ</a>まで<br class="is-sp" />ご連絡ください。</span>
-                </div>
-              </details>
-            </li>
-            <li class="faq-item">
-              <details class="details">
-                <summary class="details__summary">
-                  <span class="faq-q">Q</span>
-                  <span class="faq-question">ポートフォリオの転載や<br class="is-sp" />無断利用は可能ですか？</span>
-                </summary>
-                <div class="details__content">
-                  <span class="faq-a">A</span>
-                  <span>いいえ、無断転載・利用は禁止です。</span>
-                </div>
-              </details>
-            </li>
-            <li class="faq-item">
-              <details class="details">
-                <summary class="details__summary">
-                  <span class="faq-q">Q</span>
-                  <span class="faq-question">サイトにアクセスできないときは<br class="is-sp" />どうすればよいですか？</span>
-                </summary>
-                <div class="details__content">
-                  <span class="faq-a">A</span>
-                  <span
-                    >ブラウザのキャッシュ削除、<br class="is-sp" />再読み込みをお試しください。<br />
-                    それでも改善しない場合は<br class="is-sp" /><a href="#contact-form" class="faq-link">運営にお問い合わせ</a>まで<br class="is-sp" />ご連絡ください。</span
-                  >
-                </div>
-              </details>
-            </li>
-          </ul>
+          <div class="faq-list">
+            <div class="faq-item js-accordion">
+              <div class="details__summary">
+                <span class="faq-q">Q</span>
+                <span class="faq-question">このサイトには<br class="is-sp" />誰のポートフォリオが<br class="is-sp" />掲載されていますか？</span>
+              </div>
+              <div class="details__content">
+                <span class="faq-a">A</span>
+                <span class="faq-answer">デイトラコミュニティに参加している<br class="is-sp" />メンバー限定で掲載しています。</span>
+              </div>
+            </div>
+            <div class="faq-item js-accordion">
+              <div class="details__summary">
+                <span class="faq-q">Q</span>
+                <span class="faq-question">掲載されている<br class="is-sp" />ポートフォリオを見た後、<br class="is-sp" />直接連絡してもいいですか？</span>
+              </div>
+              <div class="details__content">
+                <span class="faq-a">A</span>
+                <span class="faq-answer type-2"
+                  >各ポートフォリオ内に記載されている<br class="is-sp" />連絡方法をご確認ください。<br />
+                  連絡可否もそちらに準じます。</span
+                >
+              </div>
+            </div>
+            <div class="faq-item js-accordion">
+              <div class="details__summary">
+                <span class="faq-q">Q</span>
+                <span class="faq-question">ポートフォリオの内容について<br class="is-sp" />質問したいときは<br class="is-sp" />どうすればいいですか？</span>
+              </div>
+              <div class="details__content">
+                <span class="faq-a">A</span>
+                <span class="faq-answer">直接制作者にご連絡いただくか、<br class="is-sp" />コミュニティ運営まで<br class="is-sp" />お問い合わせください。</span>
+              </div>
+            </div>
+            <div class="faq-item js-accordion">
+              <div class="details__summary">
+                <span class="faq-q">Q</span>
+                <span class="faq-question">掲載メンバーは<br class="is-sp" />随時追加されますか？</span>
+              </div>
+              <div class="details__content">
+                <span class="faq-a">A</span>
+                <span class="faq-answer">はい、随時追加を行ってます。<br class="is-sp" />掲載募集フォームへのご入力を<br class="is-sp" />お待ちしております。</span>
+              </div>
+            </div>
+            <div class="faq-item js-accordion">
+              <div class="details__summary">
+                <span class="faq-q">Q</span>
+                <span class="faq-question">ポートフォリオの内容に<br class="is-sp" />誤りを見つけた場合、<br class="is-sp" />どこに連絡すればよいですか？</span>
+              </div>
+              <div class="details__content">
+                <span class="faq-a">A</span>
+                <span class="faq-answer"><a href="#contact-form" class="faq-link">運営にお問い合わせ</a>まで<br class="is-sp" />ご連絡ください。</span>
+              </div>
+            </div>
+            <div class="faq-item js-accordion">
+              <div class="details__summary">
+                <span class="faq-q">Q</span>
+                <span class="faq-question">ポートフォリオの転載や<br class="is-sp" />無断利用は可能ですか？</span>
+              </div>
+              <div class="details__content">
+                <span class="faq-a">A</span>
+                <span class="faq-answer type-3">いいえ、無断転載・利用は禁止です。</span>
+              </div>
+            </div>
+            <div class="faq-item js-accordion">
+              <div class="details__summary">
+                <span class="faq-q">Q</span>
+                <span class="faq-question">サイトにアクセスできないときは<br class="is-sp" />どうすればよいですか？</span>
+              </div>
+              <div class="details__content">
+                <span class="faq-a">A</span>
+                <span class="faq-answer type-2"
+                  >ブラウザのキャッシュ削除、<br class="is-sp" />再読み込みをお試しください。<br />
+                  それでも改善しない場合は<br class="is-sp" /><a href="#contact-form" class="faq-link">運営にお問い合わせ</a>まで<br class="is-sp" />ご連絡ください。</span
+                >
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
@@ -230,9 +446,9 @@
 
         <nav class="footer__nav">
           <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="/portfolio-index.html">Portfolio</a></li>
-            <li class="footer__nav-item"><a href="/about.html">About</a></li>
-            <li class="footer__nav-item"><a href="/contact.html">Contact</a></li>
+            <li class="footer__nav-item"><a href="./portfolio-index.html">Portfolio</a></li>
+            <li class="footer__nav-item"><a href="./about.html">About</a></li>
+            <li class="footer__nav-item"><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
 
@@ -274,23 +490,17 @@
             </li>
           </ul>
         </div>
-        <p class="footer__copyright">@2025 Folio Spot</p>
+        <div class="footer__copyright-wrap">
+          <small class="footer__copyright">© 2025 Folio Spot</small>
+        </div>
       </div>
     </footer>
     <!--   / footer component   -->
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-    <script type="module" src="./assets/js/fv_anime.js"></script>
     <script type="module" src="./assets/js/index.js"></script>
-    <script type="module" src="./assets/js/pf-detail.js"></script>
-    <script type="module" src="./assets/js/contact.js"></script>
-    <noscript>
-      <style>
-        .top-hero {
-          display: none;
-        }
-      </style>
-    </noscript>
+    <script type="module" src="./assets/js/contact.js" defer></script>
   </body>
 </html>
