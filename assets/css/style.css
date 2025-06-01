@@ -2373,7 +2373,6 @@ input[type=checkbox]:checked + label::after {
   height: 100vh;
   background: #333;
   z-index: 9999;
-  display: none;
 }
 
 .top-hero__container {

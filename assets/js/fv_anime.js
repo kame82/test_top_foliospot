@@ -3,24 +3,33 @@ import { isPC } from "./responsive.js";
 // ============================
 // logic of hero animation
 // ============================
+const isFirstLoad = sessionStorage.getItem("isFirstLoad");
 addEventListener("DOMContentLoaded", () => {
   document.querySelector(".top-hero").style.display = "block";
   document.querySelectorAll("body, html").forEach((el) => el.classList.add("no-scroll"));
 });
 window.addEventListener("load", () => {
-  delay(500)
-    .then(() => animateTypeWriter1())
-    .then(() => delay(200))
-    .then(() => animateTypeWriter2())
-    .then(() => delay(100))
-    .then(() => animateTypeWriter3())
-    .then(() => delay(1000))
-    .then(() => hideTopHero())
-    .then(() => delay(1000))
-    .then(() => hideTopHeroBgkground())
-    .then(() => animateFvPeople())
-    .then(() => animateFvTitle())
-    .then(() => animateConfetti());
+  if (!isFirstLoad) {
+    delay(500)
+      .then(() => animateTypeWriter1())
+      .then(() => delay(200))
+      .then(() => animateTypeWriter2())
+      .then(() => delay(100))
+      .then(() => animateTypeWriter3())
+      .then(() => delay(1000))
+      .then(() => hideTopHero())
+      .then(() => delay(1000))
+      .then(() => hideTopHeroBgkground())
+      .then(() => animateFvPeople())
+      .then(() => animateFvTitle())
+      .then(() => animateConfetti());
+    sessionStorage.setItem("isFirstLoad", true);
+  } else {
+    hideTopHeroBgkground()
+      .then(() => animateFvPeople())
+      .then(() => animateFvTitle())
+      .then(() => animateConfetti());
+  }
 });
 
 // === delay function ===
