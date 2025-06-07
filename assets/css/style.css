@@ -2831,6 +2831,7 @@ a.next-text,
   .contact-form-section {
     padding: 5rem 0;
     border: none;
+    margin-top: 0;
     margin-left: calc(-1 * 1.25rem);
     margin-right: calc(-1 * 1.25rem);
     width: calc(100% + 2.5rem);
