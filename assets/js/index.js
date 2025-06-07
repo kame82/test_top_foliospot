@@ -172,9 +172,15 @@ document.addEventListener("DOMContentLoaded", () => {
     (entries, obs) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          entry.target.style.transitionDelay = `${index * 200}ms`; // 0.2秒ずつ遅らせる
-          entry.target.classList.add("is-inview");
-          obs.unobserve(entry.target);
+          const card = entry.target;
+          gsap.to(card, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            delay: index * 0.2,
+            ease: "power2.out"
+          });
+          obs.unobserve(card);
         }
       });
     },
@@ -184,25 +190,31 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   cards.forEach((card) => {
+    // 初期状態の設定
+    gsap.set(card, {
+      opacity: 0,
+      y: 40
+    });
+
     // Intersection Observer
     observer.observe(card);
 
     // Hover effect
     card.addEventListener("mouseenter", () => {
-      const img = card.querySelector(".gallery-card__image img");
+      const img = card.querySelector(".gallery-card__img");
       gsap.to(img, {
-        scale: 1.05,
-        duration: 0.3,
-        ease: "power2.out",
+        scale: 1.02,
+        duration: 0.1,
+        ease: "power2.out"
       });
     });
 
     card.addEventListener("mouseleave", () => {
-      const img = card.querySelector(".gallery-card__image img");
+      const img = card.querySelector(".gallery-card__img");
       gsap.to(img, {
         scale: 1,
-        duration: 0.3,
-        ease: "power2.out",
+        duration: 0.1,
+        ease: "power2.out"
       });
     });
   });

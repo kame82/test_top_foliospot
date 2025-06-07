@@ -26,12 +26,16 @@
     <meta name="twitter:title" content="サイトのタイトルを記入します" />
     <meta name="twitter:description" content="サイトの概要を記入します" />
     <meta name="twitter:image" content="https://sample.com/img/OGP.jpg" /> -->
+
+    <link rel="icon" href="./assets/img/foliospot.ico" />
+
     <!-- Google Fontsを読み込むための記述です -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
     <!-- スタイルシートの読み込みのための記述です -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script type="module" src="./assets/js/fv_anime.js" async></script>
   </head>
   <body>
     <div class="top-hero">
@@ -146,7 +150,7 @@
                 <li>
                   <label><input class="palette__type--list palette__type--list-lp" type="checkbox" name="type[]" value="lp" /><span>LP</span></label>
                 </li>
-                <label><input class="palette__type--list palette__type--list-folio" type="checkbox" name="type[]" value="folio" /><span>Folio</span></label>
+                  <label><input class="palette__type--list palette__type--list-folio" type="checkbox" name="type[]" value="folio" /><span>Folio</span></label>
                 <li>
                   <label><input class="palette__type--list palette__type--list-shopify" type="checkbox" name="type[]" value="shopify" /><span>Shopify</span></label>
                 </li>
@@ -175,10 +179,9 @@
                 </li>
                 <li>
                   <label><input class="palette__style--list palette__style--list-pop" type="checkbox" name="style[]" value="pop" /><span>Pop</span></label>
-                  </li>
                 </li>
                 <li>
-                  <label><input class="palette__style--list palette__style--list-luxury" type="checkbox" name="style[]" value="luxury" /><span>Luxury</span></label>                  </li>
+                  <label><input class="palette__style--list palette__style--list-luxury" type="checkbox" name="style[]" value="luxury" /><span>Luxury</span></label>
                 </li>
               </ul>
             </div>
@@ -192,7 +195,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -205,7 +212,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -218,7 +229,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -231,7 +246,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -244,7 +263,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -257,7 +280,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -270,7 +297,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -283,7 +314,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -296,7 +331,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -310,6 +349,10 @@
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
                           fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -322,7 +365,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -335,7 +382,11 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <path
                           d="M15.9166 25.25L30.0416 11.125C30.375 10.7917 30.7639 10.625 31.2083 10.625C31.6528 10.625 32.0416 10.7917 32.375 11.125C32.7083 11.4583 32.875 11.8544 32.875 12.3133C32.875 12.7722 32.7083 13.1678 32.375 13.5L17.0833 28.8333C16.75 29.1667 16.3611 29.3333 15.9166 29.3333C15.4722 29.3333 15.0833 29.1667 14.75 28.8333L7.58331 21.6667C7.24998 21.3333 7.08997 20.9378 7.10331 20.48C7.11664 20.0222 7.29053 19.6261 7.62497 19.2917C7.95942 18.9572 8.35553 18.7906 8.81331 18.7917C9.27109 18.7928 9.66664 18.9594 9.99997 19.2917L15.9166 25.25Z"
-                          fill="#888888"
+                          fill="#ffffff"
+                          stroke="#666666"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
                     </span>
@@ -357,84 +408,157 @@
 
     <main>
       <section class="top-gallery">
-        <div class="top-gallery__grid">
-          <!-- 9つのカードを繰り返し -->
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/card-sample.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/card-sample.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/card-sample.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/noimage.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/noimage.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/noimage.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/noimage.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/noimage.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/noimage.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/noimage.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/noimage.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <a class="gallery-card" href="./portfolio-detail.html">
-            <div class="gallery-card__image">
-              <img src="./assets/img/noimage.png" alt="" />
-            </div>
-            <div class="gallery-card__title">サイト名○○○○○○</div>
-          </a>
-          <!-- 他のカード -->
-        </div>
-        <div class="more-button">
-          <a href="#" class="bgskew"><span>View More</span></a>
+        <div class="top-gallery__inner">
+          <ul class="gallery-cards">
+            <li class="gallery-card">
+              <a href="./portfolio-detail.html">
+                <img
+                  class="gallery-card__img"
+                  src="./assets/img/01_mina.webp"
+                  alt="ポートフォリオの画像"
+                  loading="lazy"/>
+                <div class="gallery-card__wrap">
+                  <img class="gallery-card__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="80" height="80">
+                  <div class="gallery-card__info">
+                    <div class="gallery-card__name">mina</div>
+                    <div class="gallery-card__type">デザイナー</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-card">
+              <a href="./portfolio-detail.html">
+                <img
+                  class="gallery-card__img"
+                  src="./assets/img/02_shun.webp"
+                  alt="ポートフォリオの画像"
+                  loading="lazy"/>
+                <div class="gallery-card__wrap">
+                  <img class="gallery-card__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80">
+                  <div class="gallery-card__info">
+                    <div class="gallery-card__name">しゅんてぃー</div>
+                    <div class="gallery-card__type">コーダー</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-card">
+              <a href="./portfolio-detail.html">
+                <img
+                  class="gallery-card__img"
+                  src="./assets/img/03_kazui.webp"
+                  alt="ポートフォリオの画像"
+                  loading="lazy"/>
+                <div class="gallery-card__wrap">
+                  <img class="gallery-card__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80">
+                  <div class="gallery-card__info">
+                    <div class="gallery-card__name">かず</div>
+                    <div class="gallery-card__type">デザイナー</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-card">
+              <a href="./portfolio-detail.html">
+                <img
+                  class="gallery-card__img"
+                  src="./assets/img/01_mina.webp"
+                  alt="ポートフォリオの画像"
+                  loading="lazy"/>
+                <div class="gallery-card__wrap">
+                  <img class="gallery-card__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="80" height="80">
+                  <div class="gallery-card__info">
+                    <div class="gallery-card__name">mina</div>
+                    <div class="gallery-card__type">デザイナー</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-card">
+              <a href="./portfolio-detail.html">
+                <img
+                  class="gallery-card__img"
+                  src="./assets/img/02_shun.webp"
+                  alt="ポートフォリオの画像"
+                  loading="lazy"/>
+                <div class="gallery-card__wrap">
+                  <img class="gallery-card__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80">
+                  <div class="gallery-card__info">
+                    <div class="gallery-card__name">しゅんてぃー</div>
+                    <div class="gallery-card__type">コーダー</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-card">
+              <a href="./portfolio-detail.html">
+                <img
+                  class="gallery-card__img"
+                  src="./assets/img/03_kazui.webp"
+                  alt="ポートフォリオの画像"
+                  loading="lazy"/>
+                <div class="gallery-card__wrap">
+                  <img class="gallery-card__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80">
+                  <div class="gallery-card__info">
+                    <div class="gallery-card__name">かず</div>
+                    <div class="gallery-card__type">デザイナー</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-card">
+              <a href="./portfolio-detail.html">
+                <img
+                  class="gallery-card__img"
+                  src="./assets/img/01_mina.webp"
+                  alt="ポートフォリオの画像"
+                  loading="lazy"/>
+                <div class="gallery-card__wrap">
+                  <img class="gallery-card__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="80" height="80">
+                  <div class="gallery-card__info">
+                    <div class="gallery-card__name">mina</div>
+                    <div class="gallery-card__type">デザイナー</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-card">
+              <a href="./portfolio-detail.html">
+                <img
+                  class="gallery-card__img"
+                  src="./assets/img/02_shun.webp"
+                  alt="ポートフォリオの画像"
+                  loading="lazy"/>
+                <div class="gallery-card__wrap">
+                  <img class="gallery-card__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80">
+                  <div class="gallery-card__info">
+                    <div class="gallery-card__name">しゅんてぃー</div>
+                    <div class="gallery-card__type">コーダー</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="gallery-card">
+              <a href="./portfolio-detail.html">
+                <img
+                  class="gallery-card__img"
+                  src="./assets/img/03_kazui.webp"
+                  alt="ポートフォリオの画像"
+                  loading="lazy"/>
+                <div class="gallery-card__wrap">
+                  <img class="gallery-card__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80">
+                  <div class="gallery-card__info">
+                    <div class="gallery-card__name">かず</div>
+                    <div class="gallery-card__type">デザイナー</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="more-button">
+            <a href="#" class="bgskew"><span>View More</span></a>
+          </div>
         </div>
       </section>
     </main>
@@ -500,14 +624,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-    <script type="module" src="./assets/js/fv_anime.js"></script>
     <script type="module" src="./assets/js/index.js"></script>
-    <noscript>
-      <style>
-        .top-hero {
-          display: none;
-        }
-      </style>
-    </noscript>
   </body>
 </html>
