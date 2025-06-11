@@ -71,35 +71,37 @@ function openMenu() {
   });
 }
 
-function closeMenu() {
-  gsap.killTweensOf(".nav-menu__list li"); //アニメーションの停止初期化
-  document.querySelectorAll("body").forEach((el) => el.classList.remove("no-scroll"));
+async function closeMenu() {
+  await new Promise((resolve) => {
+    gsap.killTweensOf(".nav-menu__list li"); //アニメーションの停止初期化
+    document.querySelectorAll("body").forEach((el) => el.classList.remove("no-scroll"));
+
+    navList.classList.remove("js_nav-menu_active");
+    gsap.to(".nav-menu__list li", {
+      opacity: 0,
+      x: "100%",
+      duration: 0.6,
+      ease: "power2.inOut",
+      onComplete: function () {
+        navList.style.display = "none";
+      },
+    });
+
+    gsap.to(".nav-menu__mask", {
+      opacity: 0,
+      duration: 0.6,
+      ease: "power2.inOut",
+      onComplete: function () {
+        document.querySelector(".nav-menu__mask").style.display = "none";
+        resolve();
+      },
+    });
+  });
   //ロゴ切り替え
   document.querySelector("#js_nav-icon__logo").classList.remove("js_nav-menu_inactive");
   document.querySelector("#js_nav-icon__cross").classList.remove("js_nav-menu_active");
   document.querySelector("#js_nav-icon__cross").classList.add("js_nav-menu_inactive");
-
   document.querySelector(".nav-menu-wrapper").classList.remove("nav-menu-active");
-
-  navList.classList.remove("js_nav-menu_active");
-  gsap.to(".nav-menu__list li", {
-    opacity: 0,
-    x: "100%",
-    duration: 0.6,
-    ease: "power2.inOut",
-    onComplete: function () {
-      navList.style.display = "none";
-    },
-  });
-
-  gsap.to(".nav-menu__mask", {
-    opacity: 0,
-    duration: 0.6,
-    ease: "power2.inOut",
-    onComplete: function () {
-      document.querySelector(".nav-menu__mask").style.display = "none";
-    },
-  });
 }
 
 // ============================
@@ -178,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
             y: 0,
             duration: 1,
             delay: index * 0.2,
-            ease: "power2.out"
+            ease: "power2.out",
           });
           obs.unobserve(card);
         }
@@ -193,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 初期状態の設定
     gsap.set(card, {
       opacity: 0,
-      y: 40
+      y: 40,
     });
 
     // Intersection Observer
@@ -205,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
       gsap.to(img, {
         scale: 1.02,
         duration: 0.1,
-        ease: "power2.out"
+        ease: "power2.out",
       });
     });
 
@@ -214,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
       gsap.to(img, {
         scale: 1,
         duration: 0.1,
-        ease: "power2.out"
+        ease: "power2.out",
       });
     });
   });

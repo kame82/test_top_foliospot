@@ -26,6 +26,9 @@
     <meta name="twitter:title" content="サイトのタイトルを記入します" />
     <meta name="twitter:description" content="サイトの概要を記入します" />
     <meta name="twitter:image" content="https://sample.com/img/OGP.jpg" /> -->
+
+    <link rel="icon" href="./assets/img/foliospot.ico" />
+
     <!-- Google Fontsを読み込むための記述です -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,6 +71,9 @@
           </li>
           <li class="nav-menu__list--item nav-menu__list--search">
             <a href="#">Search</a>
+          </li>
+          <li class="nav-menu__list--item nav-menu__list--favorite">
+            <a href="./favorite.html">Favorite</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--contact">
             <a href="./contact.html">Contact</a>
@@ -345,7 +351,7 @@
             </div>
             <div class="palette__search-btn">
               <div class="search-button">
-                <button><span>Search</span></button>
+                <button type="submit"><span>Search</span></button>
               </div>
             </div>
           </form>
@@ -363,10 +369,32 @@
             <span class="pf-date">2023.06.01</span>
             <div class="pf-meta">
               <div class="label-group">
-                <span class="label new">New</span>
-                <span class="label wp">Wordpress</span>
-                <span class="label blue">Blue</span>
-                <span class="label luxury">Luxury</span>
+                <a class="label new">New</a>
+                <a class="label type wordpress">Wordpress</a>
+                <a class="label type studio">Studio</a>
+                <a class="label type lp">LP</a>
+                <a class="label type folio">Folio</a>
+                <a class="label type shopify">Shopify</a>
+                <a class="label type others">Others</a>
+                <a class="label style cool">Cool</a>
+                <a class="label style cute">Cute</a>
+                <a class="label style simple">Simple</a>
+                <a class="label style natural">Natural</a>
+                <a class="label style casual">Casual</a>
+                <a class="label style pop">Pop</a>
+                <a class="label style luxury">Luxury</a>
+                <a class="label color red">Red</a>
+                <a class="label color orange">Orange</a>
+                <a class="label color yellow">Yellow</a>
+                <a class="label color green">Green</a>
+                <a class="label color blue">Blue</a>
+                <a class="label color purple">Purple</a>
+                <a class="label color pink">Pink</a>
+                <a class="label color brown">Brown</a>
+                <a class="label color black">Black</a>
+                <a class="label color gray">Gray</a>
+                <a class="label color white">White</a>
+                <a class="label color abc"><img src="../assets/img/palette-other-v2.webp" class="color-other-img" alt="c-other" /><span class="color-other-text">Other</span></a>
               </div>
               <span class="favorite">
                 <input type="checkbox" id="like" />
@@ -413,7 +441,7 @@
             <span class="prev-text">Previous</span>
           </button>
           <div class="alllist-button type-2">
-            <button class="bgskew"><span>All List</span></button>
+            <a class="bgskew" href="./portfolio-index.html"><span>All List</span></a>
           </div>
           <button class="next">
             <span class="next-text">Next</span>
@@ -426,111 +454,87 @@
         <section class="pf-gallery">
           <div class="pf-gallery__inner">
             <div class="pf-gallery__wrapper">
-            <h2 class="pf-card-section-title">New Article</h2>
-            <ul class="pf-gallery__cards">
-              <li class="pf-gallery__card">
-                <a href="./portfolio-detail.html">
-                  <img
-                    class="pf-gallery__img"
-                    src="./assets/img/01_mina.webp"
-                    alt="ポートフォリオの画像"
-                    loading="lazy"/>
-                  <div class="pf-gallery__wrap">
-                    <img class="pf-gallery__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="60" height="60">
-                    <div class="pf-gallery__info">
-                      <div class="pf-gallery__name">mina</div>
-                      <div class="pf-gallery__type">デザイナー</div>
+              <h2 class="pf-card-section-title">New Article</h2>
+              <ul class="pf-gallery__cards">
+                <li class="pf-gallery__card">
+                  <a href="./portfolio-detail.html">
+                    <img class="pf-gallery__img" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    <div class="pf-gallery__body">
+                      <img class="pf-gallery__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="60" height="60" />
+                      <div class="pf-gallery__info">
+                        <div class="pf-gallery__name">mina</div>
+                        <div class="pf-gallery__type">デザイナー</div>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="pf-gallery__card">
-                <a href="./portfolio-detail.html">
-                  <img
-                    class="pf-gallery__img"
-                    src="./assets/img/02_shun.webp"
-                    alt="ポートフォリオの画像"
-                    loading="lazy"/>
-                  <div class="pf-gallery__wrap">
-                    <img class="pf-gallery__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80">
-                    <div class="pf-gallery__info">
-                      <div class="pf-gallery__name">しゅんてぃー</div>
-                      <div class="pf-gallery__type">コーダー</div>
+                  </a>
+                </li>
+                <li class="pf-gallery__card">
+                  <a href="./portfolio-detail.html">
+                    <img class="pf-gallery__img" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    <div class="pf-gallery__body">
+                      <img class="pf-gallery__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80" />
+                      <div class="pf-gallery__info">
+                        <div class="pf-gallery__name">しゅんてぃー</div>
+                        <div class="pf-gallery__type">コーダー</div>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="pf-gallery__card">
-                <a href="./portfolio-detail.html">
-                  <img
-                    class="pf-gallery__img"
-                    src="./assets/img/03_kazui.webp"
-                    alt="ポートフォリオの画像"
-                    loading="lazy"/>
-                  <div class="pf-gallery__wrap">
-                    <img class="pf-gallery__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80">
-                    <div class="pf-gallery__info">
-                      <div class="pf-gallery__name">かず</div>
-                      <div class="pf-gallery__type">デザイナー</div>
+                  </a>
+                </li>
+                <li class="pf-gallery__card">
+                  <a href="./portfolio-detail.html">
+                    <img class="pf-gallery__img" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    <div class="pf-gallery__body">
+                      <img class="pf-gallery__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80" />
+                      <div class="pf-gallery__info">
+                        <div class="pf-gallery__name">かず</div>
+                        <div class="pf-gallery__type">デザイナー</div>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="pf-gallery__wrapper">
               <h2 class="pf-card-section-title">View Ranking</h2>
               <ul class="pf-gallery__cards">
-              <li class="pf-gallery__card">
-                <a href="./portfolio-detail.html">
-                  <img
-                    class="pf-gallery__img"
-                    src="./assets/img/01_mina.webp"
-                    alt="ポートフォリオの画像"
-                    loading="lazy"/>
-                  <div class="pf-gallery__wrap">
-                    <img class="pf-gallery__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="80" height="80">
-                    <div class="pf-gallery__info">
-                      <div class="pf-gallery__name">mina</div>
-                      <div class="pf-gallery__type">デザイナー</div>
+                <li class="pf-gallery__card">
+                  <a href="./portfolio-detail.html">
+                    <img class="pf-gallery__img" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    <div class="pf-gallery__body">
+                      <img class="pf-gallery__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="60" height="60" />
+                      <div class="pf-gallery__info">
+                        <div class="pf-gallery__name">mina</div>
+                        <div class="pf-gallery__type">デザイナー</div>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="pf-gallery__card">
-                <a href="./portfolio-detail.html">
-                  <img
-                    class="pf-gallery__img"
-                    src="./assets/img/02_shun.webp"
-                    alt="ポートフォリオの画像"
-                    loading="lazy"/>
-                  <div class="pf-gallery__wrap">
-                    <img class="pf-gallery__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80">
-                    <div class="pf-gallery__info">
-                      <div class="pf-gallery__name">しゅんてぃー</div>
-                      <div class="pf-gallery__type">コーダー</div>
+                  </a>
+                </li>
+                <li class="pf-gallery__card">
+                  <a href="./portfolio-detail.html">
+                    <img class="pf-gallery__img" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    <div class="pf-gallery__body">
+                      <img class="pf-gallery__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80" />
+                      <div class="pf-gallery__info">
+                        <div class="pf-gallery__name">しゅんてぃー</div>
+                        <div class="pf-gallery__type">コーダー</div>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="pf-gallery__card">
-                <a href="./portfolio-detail.html">
-                  <img
-                    class="pf-gallery__img"
-                    src="./assets/img/03_kazui.webp"
-                    alt="ポートフォリオの画像"
-                    loading="lazy"/>
-                  <div class="pf-gallery__wrap">
-                    <img class="pf-gallery__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80">
-                    <div class="pf-gallery__info">
-                      <div class="pf-gallery__name">かず</div>
-                      <div class="pf-gallery__type">デザイナー</div>
+                  </a>
+                </li>
+                <li class="pf-gallery__card">
+                  <a href="./portfolio-detail.html">
+                    <img class="pf-gallery__img" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    <div class="pf-gallery__body">
+                      <img class="pf-gallery__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80" />
+                      <div class="pf-gallery__info">
+                        <div class="pf-gallery__name">かず</div>
+                        <div class="pf-gallery__type">デザイナー</div>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </div>

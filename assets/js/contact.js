@@ -14,14 +14,21 @@ document.querySelectorAll('.js-accordion').forEach(item => {
     summary.addEventListener('click', () => {
         const isOpen = item.classList.contains('is-open');
         const width = window.innerWidth;
+        const isType2 = content.classList.contains('type-2');
 
         let openHeight;
-        if (width <= 767) {
-            openHeight = '80px'; // SP
+        if (isType2) {
+            if (width <= 550) {
+                openHeight = '7.25rem'; // type-2 かつ 550以下
+            } else {
+                openHeight = '5rem'; // type-2 かつ それ以外
+            }
+        } else if (width <= 767) {
+            openHeight = '4.375rem'; // 通常SP
         } else if (width <= 1024) {
-            openHeight = '50px'; // タブレット
+            openHeight = '3.125rem'; // 通常タブレット
         } else {
-            openHeight = '70px'; // PC
+            openHeight = '5rem'; // 通常PC
         }
 
         if (isOpen) {
