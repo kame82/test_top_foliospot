@@ -36,7 +36,7 @@
     <!-- スタイルシートの読み込みのための記述です -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body id="detail">
     <!--    header   -->
     <header class="header header--portfolio">
       <h1 class="header__title">Portfolio</h1>
@@ -67,7 +67,7 @@
             <a href="./about.html">About</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--portfolio">
-            <a href="./portfolio-index.html">Portfolio</a>
+            <a href="./portfolio-list.html">Portfolio</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--search">
             <a href="#">Search</a>
@@ -362,7 +362,7 @@
     <!--   / nav menu component   -->
 
     <main class="main">
-      <nav class="breadcrumb"> <a href="./">Home</a> - <a href="./portfolio-index.html">Portfolio</a> </nav>
+      <nav class="breadcrumb"> <a href="./">Home</a> - <a href="./portfolio-list.html">Portfolio</a> </nav>
       <div class="inner detail-inner">
         <section class="portfolio-detail">
           <div class="pf-main-content">
@@ -394,7 +394,7 @@
                 <a class="label color black">Black</a>
                 <a class="label color gray">Gray</a>
                 <a class="label color white">White</a>
-                <a class="label color abc"><img src="../assets/img/palette-other-v2.webp" class="color-other-img" alt="c-other" /><span class="color-other-text">Other</span></a>
+                <a class="label color abc"><img src="./assets/img/palette-other-v2.webp" class="color-other-img" alt="c-other" /><span class="color-other-text">Other</span></a>
               </div>
               <span class="favorite">
                 <input type="checkbox" id="like" />
@@ -441,7 +441,7 @@
             <span class="prev-text">Previous</span>
           </button>
           <div class="alllist-button type-2">
-            <a class="bgskew" href="./portfolio-index.html"><span>All List</span></a>
+            <a class="bgskew" href="./portfolio-list.html"><span>All List</span></a>
           </div>
           <button class="next">
             <span class="next-text">Next</span>
@@ -456,9 +456,11 @@
             <div class="pf-gallery__wrapper">
               <h2 class="pf-card-section-title">New Article</h2>
               <ul class="pf-gallery__cards">
-                <li class="pf-gallery__card">
-                  <a href="./portfolio-detail.html">
-                    <img class="pf-gallery__img" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+                <li>
+                  <a class="pf-gallery__card js-card-animation" href="./portfolio-detail.html">
+                    <div class="card-image-container">
+                      <img class="pf-gallery__img js-card-img-animation" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    </div>
                     <div class="pf-gallery__body">
                       <img class="pf-gallery__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="60" height="60" />
                       <div class="pf-gallery__info">
@@ -468,9 +470,11 @@
                     </div>
                   </a>
                 </li>
-                <li class="pf-gallery__card">
-                  <a href="./portfolio-detail.html">
-                    <img class="pf-gallery__img" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+                <li>
+                  <a class="pf-gallery__card js-card-animation" href="./portfolio-detail.html">
+                    <div class="card-image-container">
+                      <img class="pf-gallery__img js-card-img-animation" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    </div>
                     <div class="pf-gallery__body">
                       <img class="pf-gallery__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80" />
                       <div class="pf-gallery__info">
@@ -480,9 +484,11 @@
                     </div>
                   </a>
                 </li>
-                <li class="pf-gallery__card">
-                  <a href="./portfolio-detail.html">
-                    <img class="pf-gallery__img" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+                <li>
+                  <a class="pf-gallery__card js-card-animation" href="./portfolio-detail.html">
+                    <div class="card-image-container">
+                      <img class="pf-gallery__img js-card-img-animation" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    </div>
                     <div class="pf-gallery__body">
                       <img class="pf-gallery__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80" />
                       <div class="pf-gallery__info">
@@ -497,9 +503,11 @@
             <div class="pf-gallery__wrapper">
               <h2 class="pf-card-section-title">View Ranking</h2>
               <ul class="pf-gallery__cards">
-                <li class="pf-gallery__card">
-                  <a href="./portfolio-detail.html">
-                    <img class="pf-gallery__img" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+                <li>
+                  <a class="pf-gallery__card js-card-animation" href="./portfolio-detail.html">
+                    <div class="card-image-container">
+                      <img class="pf-gallery__img js-card-img-animation" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    </div>
                     <div class="pf-gallery__body">
                       <img class="pf-gallery__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="60" height="60" />
                       <div class="pf-gallery__info">
@@ -509,9 +517,11 @@
                     </div>
                   </a>
                 </li>
-                <li class="pf-gallery__card">
-                  <a href="./portfolio-detail.html">
-                    <img class="pf-gallery__img" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+                <li>
+                  <a class="pf-gallery__card js-card-animation" href="./portfolio-detail.html">
+                    <div class="card-image-container">
+                      <img class="pf-gallery__img js-card-img-animation" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    </div>
                     <div class="pf-gallery__body">
                       <img class="pf-gallery__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80" />
                       <div class="pf-gallery__info">
@@ -521,9 +531,11 @@
                     </div>
                   </a>
                 </li>
-                <li class="pf-gallery__card">
-                  <a href="./portfolio-detail.html">
-                    <img class="pf-gallery__img" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+                <li>
+                  <a class="pf-gallery__card js-card-animation" href="./portfolio-detail.html">
+                    <div class="card-image-container">
+                      <img class="pf-gallery__img js-card-img-animation" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+                    </div>
                     <div class="pf-gallery__body">
                       <img class="pf-gallery__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80" />
                       <div class="pf-gallery__info">
@@ -544,13 +556,15 @@
     <footer class="footer">
       <div class="footer__inner">
         <h2 class="footer__title">
-          <img src="./assets/img/folio-icon_pc.png" width="50" height="50" alt="" />
-          Folio Spot
+          <a href="./">
+            <img src="./assets/img/folio-icon_pc.png" width="50" height="50" alt="" />
+            Folio Spot
+          </a>
         </h2>
 
         <nav class="footer__nav">
           <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="./portfolio-index.html">Portfolio</a></li>
+            <li class="footer__nav-item"><a href="./portfolio-list.html">Portfolio</a></li>
             <li class="footer__nav-item"><a href="./about.html">About</a></li>
             <li class="footer__nav-item"><a href="./contact.html">Contact</a></li>
           </ul>
@@ -605,6 +619,5 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script type="module" src="./assets/js/index.js"></script>
-    <script type="module" src="./assets/js/pf-detail.js"></script>
   </body>
 </html>

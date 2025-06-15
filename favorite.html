@@ -36,7 +36,7 @@
     <!-- スタイルシートの読み込みのための記述です -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="portfolio-favorite">
+  <body id="favorite">
     <!--    header   -->
     <header class="header header--favorite">
       <h1 class="header__title">Favorite</h1>
@@ -67,7 +67,7 @@
             <a href="./about.html">About</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--portfolio">
-            <a href="./portfolio-index.html">Portfolio</a>
+            <a href="./portfolio-list.html">Portfolio</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--search">
             <a href="#">Search</a>
@@ -363,12 +363,20 @@
 
     <main class="main">
       <nav class="breadcrumb"> <a href="./">Home</a> - <a href="./category.html">Favorite</a></nav>
-      <section class="category-gallery">
-        <div class="category-gallery__inner">
+      <section class="top-gallery pt-0">
+        <div class="top-gallery__inner">
           <ul class="gallery-cards">
-            <li class="gallery-card">
-              <a href="./portfolio-detail.html">
-                <img class="gallery-card__img" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+            <li>
+              <a class="gallery-card js-card-animation" href="./portfolio-detail.html">
+                <div class="card-image-container">
+                  <img class="gallery-card__img js-card-img-animation" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+                </div>
+                <div class="gallery-label__wrap label-group">
+                  <span class="label new">New</span>
+                  <span class="label type wordpress">Wordpress</span>
+                  <span class="label style luxury">Luxury</span>
+                  <span class="label color yellow">Yellow</span>
+                </div>
                 <div class="gallery-card__wrap">
                   <img class="gallery-card__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="80" height="80" />
                   <div class="gallery-card__info">
@@ -378,9 +386,17 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-card">
-              <a href="./portfolio-detail.html">
-                <img class="gallery-card__img" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+            <li>
+              <a class="gallery-card js-card-animation" href="./portfolio-detail.html">
+                <div class="card-image-container">
+                  <img class="gallery-card__img js-card-img-animation" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+                </div>
+                <div class="gallery-label__wrap label-group">
+                  <span class="label new">New</span>
+                  <span class="label type wordpress">Wordpress</span>
+                  <span class="label style luxury">Luxury</span>
+                  <span class="label color yellow">Yellow</span>
+                </div>
                 <div class="gallery-card__wrap">
                   <img class="gallery-card__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80" />
                   <div class="gallery-card__info">
@@ -390,9 +406,17 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-card">
-              <a href="./portfolio-detail.html">
-                <img class="gallery-card__img" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+            <li>
+              <a class="gallery-card js-card-animation" href="./portfolio-detail.html">
+                <div class="card-image-container">
+                  <img class="gallery-card__img js-card-img-animation" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+                </div>
+                <div class="gallery-label__wrap label-group">
+                  <span class="label new">New</span>
+                  <span class="label type wordpress">Wordpress</span>
+                  <span class="label style luxury">Luxury</span>
+                  <span class="label color yellow">Yellow</span>
+                </div>
                 <div class="gallery-card__wrap">
                   <img class="gallery-card__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80" />
                   <div class="gallery-card__info">
@@ -402,9 +426,17 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-card">
-              <a href="./portfolio-detail.html">
-                <img class="gallery-card__img" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+            <li>
+              <a class="gallery-card js-card-animation" href="./portfolio-detail.html">
+                <div class="card-image-container">
+                  <img class="gallery-card__img js-card-img-animation" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+                </div>
+                <div class="gallery-label__wrap label-group">
+                  <span class="label new">New</span>
+                  <span class="label type wordpress">Wordpress</span>
+                  <span class="label style luxury">Luxury</span>
+                  <span class="label color yellow">Yellow</span>
+                </div>
                 <div class="gallery-card__wrap">
                   <img class="gallery-card__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="80" height="80" />
                   <div class="gallery-card__info">
@@ -414,9 +446,17 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-card">
-              <a href="./portfolio-detail.html">
-                <img class="gallery-card__img" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+            <li>
+              <a class="gallery-card js-card-animation" href="./portfolio-detail.html">
+                <div class="card-image-container">
+                  <img class="gallery-card__img js-card-img-animation" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+                </div>
+                <div class="gallery-label__wrap label-group">
+                  <span class="label new">New</span>
+                  <span class="label type wordpress">Wordpress</span>
+                  <span class="label style luxury">Luxury</span>
+                  <span class="label color yellow">Yellow</span>
+                </div>
                 <div class="gallery-card__wrap">
                   <img class="gallery-card__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80" />
                   <div class="gallery-card__info">
@@ -426,9 +466,17 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-card">
-              <a href="./portfolio-detail.html">
-                <img class="gallery-card__img" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+            <li>
+              <a class="gallery-card js-card-animation" href="./portfolio-detail.html">
+                <div class="card-image-container">
+                  <img class="gallery-card__img js-card-img-animation" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+                </div>
+                <div class="gallery-label__wrap label-group">
+                  <span class="label new">New</span>
+                  <span class="label type wordpress">Wordpress</span>
+                  <span class="label style luxury">Luxury</span>
+                  <span class="label color yellow">Yellow</span>
+                </div>
                 <div class="gallery-card__wrap">
                   <img class="gallery-card__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80" />
                   <div class="gallery-card__info">
@@ -438,9 +486,17 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-card">
-              <a href="./portfolio-detail.html">
-                <img class="gallery-card__img" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+            <li>
+              <a class="gallery-card js-card-animation" href="./portfolio-detail.html">
+                <div class="card-image-container">
+                  <img class="gallery-card__img js-card-img-animation" src="./assets/img/01_mina.webp" alt="ポートフォリオの画像" loading="lazy" />
+                </div>
+                <div class="gallery-label__wrap label-group">
+                  <span class="label new">New</span>
+                  <span class="label type wordpress">Wordpress</span>
+                  <span class="label style luxury">Luxury</span>
+                  <span class="label color yellow">Yellow</span>
+                </div>
                 <div class="gallery-card__wrap">
                   <img class="gallery-card__icon" src="./assets/img/01_mina-icon.webp" alt="icon" width="80" height="80" />
                   <div class="gallery-card__info">
@@ -450,9 +506,17 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-card">
-              <a href="./portfolio-detail.html">
-                <img class="gallery-card__img" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+            <li>
+              <a class="gallery-card js-card-animation" href="./portfolio-detail.html">
+                <div class="card-image-container">
+                  <img class="gallery-card__img js-card-img-animation" src="./assets/img/02_shun.webp" alt="ポートフォリオの画像" loading="lazy" />
+                </div>
+                <div class="gallery-label__wrap label-group">
+                  <span class="label new">New</span>
+                  <span class="label type wordpress">Wordpress</span>
+                  <span class="label style luxury">Luxury</span>
+                  <span class="label color yellow">Yellow</span>
+                </div>
                 <div class="gallery-card__wrap">
                   <img class="gallery-card__icon" src="./assets/img/02_shun-icon.webp" alt="icon" width="80" height="80" />
                   <div class="gallery-card__info">
@@ -462,9 +526,17 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-card">
-              <a href="./portfolio-detail.html">
-                <img class="gallery-card__img" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+            <li>
+              <a class="gallery-card js-card-animation" href="./portfolio-detail.html">
+                <div class="card-image-container">
+                  <img class="gallery-card__img js-card-img-animation" src="./assets/img/03_kazui.webp" alt="ポートフォリオの画像" loading="lazy" />
+                </div>
+                <div class="gallery-label__wrap label-group">
+                  <span class="label new">New</span>
+                  <span class="label type wordpress">Wordpress</span>
+                  <span class="label style luxury">Luxury</span>
+                  <span class="label color yellow">Yellow</span>
+                </div>
                 <div class="gallery-card__wrap">
                   <img class="gallery-card__icon" src="./assets/img/03_kazui-icon.webp" alt="icon" width="80" height="80" />
                   <div class="gallery-card__info">
@@ -483,19 +555,25 @@
           <li class="pagination__index--item"><a href="#">4</a></li>
           <li class="pagination__index--item"><a href="#">5</a></li>
         </ul>
+
+        <div class="alllist-button type-2 all-list-button--warp">
+          <a class="bgskew"><span>All List</span></a>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer__inner">
         <h2 class="footer__title">
-          <img src="./assets/img/folio-icon_pc.png" width="50" height="50" alt="" />
-          Folio Spot
+          <a href="./">
+            <img src="./assets/img/folio-icon_pc.png" width="50" height="50" alt="" />
+            Folio Spot
+          </a>
         </h2>
 
         <nav class="footer__nav">
           <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="./portfolio-index.html">Portfolio</a></li>
+            <li class="footer__nav-item"><a href="./portfolio-list.html">Portfolio</a></li>
             <li class="footer__nav-item"><a href="./about.html">About</a></li>
             <li class="footer__nav-item"><a href="./contact.html">Contact</a></li>
           </ul>
@@ -549,6 +627,5 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script type="module" src="./assets/js/index.js"></script>
-    <script type="module" src="./assets/js/category.js"></script>
   </body>
 </html>

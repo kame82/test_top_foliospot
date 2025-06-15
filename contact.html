@@ -36,7 +36,7 @@
     <!-- スタイルシートの読み込みのための記述です -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body id="contact">
     <!--    header   -->
     <header class="header header--contact">
       <h1 class="header__title">Contact</h1>
@@ -67,7 +67,7 @@
             <a href="./about.html">About</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--portfolio">
-            <a href="./portfolio-index.html">Portfolio</a>
+            <a href="./portfolio-list.html">Portfolio</a>
           </li>
           <li class="nav-menu__list--item nav-menu__list--search">
             <a href="#">Search</a>
@@ -438,7 +438,8 @@
               </div>
               <div class="details__content type-2">
                 <span class="faq-a">A</span>
-                <span class="faq-answer">恐れ入りますが、個別のご相談は<br class="is-450 is-u550" />各制作者様へ直接ご連絡ください。<br />
+                <span class="faq-answer"
+                  >恐れ入りますが、個別のご相談は<br class="is-450 is-u550" />各制作者様へ直接ご連絡ください。<br />
                   やり取りの詳細については当方では<br class="is-sp is-u550" />把握・管理しておりませんので、<br class="is-u450" />ご了承ください。</span
                 >
               </div>
@@ -478,9 +479,9 @@
                 <span class="faq-q">Q</span>
                 <span class="faq-question">サイトにアクセスできないときは<br class="is-sp" />どうすればよいですか？</span>
               </div>
-              <div class="details__content">
+              <div class="details__content type-2">
                 <span class="faq-a">A</span>
-                <span class="faq-answer type-2"
+                <span class="faq-answer"
                   >ブラウザのキャッシュ削除、<br class="is-u550" />再読み込みをお試しください。<br />
                   それでも改善しない場合は<br class="is-sp" /><a href="#contact-form" class="faq-link">運営にお問い合わせ</a>まで<br class="is-u550" />ご連絡ください。</span
                 >
@@ -495,13 +496,15 @@
     <footer class="footer">
       <div class="footer__inner">
         <h2 class="footer__title">
-          <img src="./assets/img/folio-icon_pc.png" width="50" height="50" alt="" />
-          Folio Spot
+          <a href="./">
+            <img src="./assets/img/folio-icon_pc.png" width="50" height="50" alt="" />
+            Folio Spot
+          </a>
         </h2>
 
         <nav class="footer__nav">
           <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="./portfolio-index.html">Portfolio</a></li>
+            <li class="footer__nav-item"><a href="./portfolio-list.html">Portfolio</a></li>
             <li class="footer__nav-item"><a href="./about.html">About</a></li>
             <li class="footer__nav-item"><a href="./contact.html">Contact</a></li>
           </ul>
@@ -556,6 +559,5 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script type="module" src="./assets/js/index.js"></script>
-    <script type="module" src="./assets/js/contact.js"></script>
   </body>
 </html>

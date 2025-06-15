@@ -1,36 +1,38 @@
-import { isPC } from "./responsive.js";
+import { isPC } from "./mediaQuery.js";
 
 // ============================
 // logic of hero animation
 // ============================
-const isFirstLoad = sessionStorage.getItem("isFirstLoad");
-addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".top-hero").style.display = "block";
-  document.querySelectorAll("body, html").forEach((el) => el.classList.add("no-scroll"));
-});
-window.addEventListener("load", () => {
-  if (!isFirstLoad) {
-    delay(500)
-      .then(() => animateTypeWriter1())
-      .then(() => delay(200))
-      .then(() => animateTypeWriter2())
-      .then(() => delay(100))
-      .then(() => animateTypeWriter3())
-      .then(() => delay(1000))
-      .then(() => hideTopHero())
-      .then(() => delay(1000))
-      .then(() => hideTopHeroBgkground())
-      .then(() => animateFvPeople())
-      .then(() => animateFvTitle())
-      .then(() => animateConfetti());
-    sessionStorage.setItem("isFirstLoad", true);
-  } else {
-    hideTopHeroBgkground()
-      .then(() => animateFvPeople())
-      .then(() => animateFvTitle())
-      .then(() => animateConfetti());
-  }
-});
+if (document.querySelector("#index")) {
+  const isFirstLoad = sessionStorage.getItem("isFirstLoad");
+
+  window.addEventListener("load", () => {
+    document.querySelector(".top-hero").style.display = "block";
+    document.querySelectorAll("body, html").forEach((el) => el.classList.add("no-scroll"));
+    initAnimation();
+    if (!isFirstLoad) {
+      delay(500)
+        .then(() => animateTypeWriter1())
+        .then(() => delay(200))
+        .then(() => animateTypeWriter2())
+        .then(() => delay(100))
+        .then(() => animateTypeWriter3())
+        .then(() => delay(1000))
+        .then(() => hideTopHero())
+        .then(() => delay(1000))
+        .then(() => hideTopHeroBgkground())
+        .then(() => animateFvPeople())
+        .then(() => animateFvTitle())
+        .then(() => animateConfetti());
+      sessionStorage.setItem("isFirstLoad", true);
+    } else {
+      hideTopHeroBgkground()
+        .then(() => animateFvPeople())
+        .then(() => animateFvTitle())
+        .then(() => animateConfetti());
+    }
+  });
+}
 
 // === delay function ===
 function delay(ms) {
@@ -38,6 +40,19 @@ function delay(ms) {
 }
 
 // === hero animation (typewriter) ===
+const typing = (selector, text) => {
+  return new Promise((resolve) => {
+    text.split("").forEach((char, index) => {
+      setTimeout(() => {
+        document.querySelector(selector).textContent += char;
+        if (index === text.length - 1) {
+          resolve();
+        }
+      }, 50 * index);
+    });
+  });
+};
+
 function animateTypeWriter1() {
   return new Promise((resolve) => {
     typing(".top-hero__title1", "クリエイターの").then(resolve);
@@ -56,19 +71,6 @@ function animateTypeWriter3() {
   });
 }
 
-const typing = (selector, text) => {
-  return new Promise((resolve) => {
-    text.split("").forEach((char, index) => {
-      setTimeout(() => {
-        document.querySelector(selector).textContent += char;
-        if (index === text.length - 1) {
-          resolve();
-        }
-      }, 50 * index);
-    });
-  });
-};
-
 // ==== hide top hero ===
 function hideTopHero() {
   return new Promise((resolve) => {
@@ -85,6 +87,8 @@ function hideTopHero() {
 function hideTopHeroBgkground() {
   return new Promise((resolve) => {
     document.querySelectorAll("body, html").forEach((el) => el.classList.remove("no-scroll"));
+    document.querySelector(".top-hero").style.pointerEvents = "none";
+
     gsap.to(".top-hero", {
       opacity: 0,
       duration: 2,
@@ -98,9 +102,11 @@ function hideTopHeroBgkground() {
 
 // === top hero animation (fv section) ===
 // init animation
-gsap.set(".top-fv__title", { y: -200, opacity: 0 });
-for (let i = 1; i <= 9; i++) {
-  gsap.set(`.top-fv__container-people--${i}`, { opacity: 0 });
+function initAnimation() {
+  gsap.set(".top-fv__title", { y: -200, opacity: 0 });
+  for (let i = 1; i <= 9; i++) {
+    gsap.set(`.top-fv__container-people--${i}`, { opacity: 0 });
+  }
 }
 
 // people animation
@@ -117,7 +123,7 @@ function animateFvPeople() {
     const shuffledArray = array.sort(() => Math.random() - 0.5);
     shuffledArray.push(5);
 
-    shuffledArray.forEach((x, i) => {
+    shuffledArray.forEach((x) => {
       timeline.fromTo(
         `.top-fv__container-people--${x}`,
         { opacity: 0 },
@@ -163,15 +169,15 @@ function animateConfetti() {
   });
 }
 
-// === confettiの初期化 ===
-var myCanvas = document.createElement("canvas");
-document.querySelector(".top-fv--container").appendChild(myCanvas);
-var myConfetti = confetti.create(myCanvas, {
-  resize: true,
-  useWorker: true,
-});
-
 function confettiTop() {
+  // === confettiの初期化 ===
+  var myCanvas = document.createElement("canvas");
+  document.querySelector(".top-fv--container").appendChild(myCanvas);
+
+  var myConfetti = confetti.create(myCanvas, {
+    resize: true,
+    useWorker: true,
+  });
   if (isPC()) {
     // 画面左側
     myConfetti({
